@@ -18,6 +18,7 @@ public:
     void info();
 
     Doctor(string &&name="None",int age=0,string &&specialty="None");
+    ~Doctor();
 };
 
 
