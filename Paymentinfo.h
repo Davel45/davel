@@ -14,7 +14,7 @@ public:
     void set_namepatienthowpay();
     void get_namepatienthowpay();
     void set_timepay();
-    void get_timepay();
+    void get_timepay() const;
     void set_howmuchpay();
     void get_howmuchpay();
     void info();

@@ -1,0 +1,3 @@
+C:/Users/Vadim/OneDrive/Рабочий стол/labvadim/cmake-build-debug/CMakeFiles/labvadim.dir
+C:/Users/Vadim/OneDrive/Рабочий стол/labvadim/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Vadim/OneDrive/Рабочий стол/labvadim/cmake-build-debug/CMakeFiles/rebuild_cache.dir

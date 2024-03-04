@@ -21,7 +21,7 @@ void Payinfo::set_timepay() {
     cin>>Timepay;
     timepay=Timepay;
 }
-void Payinfo::get_timepay() {
+void Payinfo::get_timepay() const {
     cout<<"Time pay: "<<timepay<<endl;
 }
 void Payinfo::set_howmuchpay() {
@@ -36,6 +36,12 @@ void Payinfo::get_howmuchpay() {
 void Payinfo::info() {
     cout<<"Name patient how pay: "<<namepatienthowpay<<"\nTime pay: "<<timepay<<"\nHow much pay: "<<howmuchpay<<endl<<endl;
 }
+
+Payinfo::Payinfo(std::string &&Namepatienthowpay,std::string &&Timepay,float Howmuchpay):
+    namepatienthowpay(Namepatienthowpay),timepay(Timepay),howmuchpay(Howmuchpay){
+    cout<<""<<endl;
+}
+
 Payinfo::Payinfo(const Payinfo &other) {
     namepatienthowpay=other.namepatienthowpay;
     timepay=other.timepay;

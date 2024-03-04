@@ -17,11 +17,13 @@ public:
     void set_phonenamber();
     void get_phonenamber();
     void info();
+    static int getpatient();
 
     Patient();
     Patient(string Namepatient);
     Patient(string Namepatient,int Age);
     Patient(string Namepatient,int Age,string Phonepatient);
+    Patient& operator++();
     ~Patient();
 };
 

@@ -43,7 +43,24 @@ name(Namedoctor),age(Age),specialty(Specialtydoctor)
 {
     cout<<"called constructor default"<<endl;
 }
+
 Doctor::~Doctor()
 {
     cout<<"called Doctor destructor"<<endl;
+}
+istream& operator>>(istream& input, Doctor& doctor) {
+    cout << "Enter name doctor: ";
+    input >> doctor.name;
+
+    cout << "Enter specialty: ";
+    input >> doctor.specialty;
+
+    cout << "Enter age doctor: ";
+    input >> doctor.age;
+
+    return input;
+}
+ostream& operator<<(ostream& output, const Doctor& doctor) {
+    output << "Name doctor: " << doctor.name << "\nSpecialty: " << doctor.specialty << "\nAge doctor: " << doctor.age << endl;
+    return output;
 }

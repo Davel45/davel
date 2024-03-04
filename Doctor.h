@@ -18,7 +18,11 @@ public:
     void info();
 
     Doctor(string &&name="None",int age=0,string &&specialty="None");
+
     ~Doctor();
+
+    friend istream& operator>>(istream& input, Doctor& doctor);
+    friend ostream& operator<<(ostream& output, const Doctor& doctor);
 };
 
 

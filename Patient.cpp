@@ -1,7 +1,6 @@
 #include <iostream>
 #include "Patient.h"
 using namespace std;
-
 void Patient::set_name()
 {
     cout<<"enter name patient: ";
@@ -57,6 +56,13 @@ Patient::Patient(std::string Namepatient, int Age, std::string Phonenamberpatien
 {
 phonenamber=Phonenamberpatient;
 }
+
+Patient& Patient::operator++()
+{
+    ++age;
+    return *this;
+}
+
 Patient::~Patient()
 {
     cout<<"called Patient destructor"<<endl;

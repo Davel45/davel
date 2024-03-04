@@ -9,7 +9,11 @@ int main(){
  dock.info();
 
  Patient pat ("Wowa",18,"0981255135");
+ ++pat;
  pat.info();
+
+ Patient patt ("Vladick",18,"0965224656");
+ patt.info();
 
  Appointment appp("15:00","14 april");
  appp.info();
@@ -17,5 +21,11 @@ int main(){
  Payinfo pay("Maksim","11 april",1850);
  pay.info();
 
+cout<<"Statick number:"<<&Patient::getpatient<<endl;
+
+Payinfo paycopy=pay;
+paycopy.info();
+
+cout<<dock;
  return 0;
 }
