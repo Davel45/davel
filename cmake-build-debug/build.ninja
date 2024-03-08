@@ -84,6 +84,20 @@ build CMakeFiles/labvadim.dir/Paymentinfo.cpp.obj: CXX_COMPILER__labvadim_unscan
   OBJECT_DIR = CMakeFiles\labvadim.dir
   OBJECT_FILE_DIR = CMakeFiles\labvadim.dir
 
+build CMakeFiles/labvadim.dir/Person.cpp.obj: CXX_COMPILER__labvadim_unscanned_Debug C$:/Users/Vadim/OneDrive/Рабочий$ стол/labvadim/Person.cpp || cmake_object_order_depends_target_labvadim
+  DEP_FILE = CMakeFiles\labvadim.dir\Person.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Vadim/OneDrive/Рабочий стол/labvadim/."
+  OBJECT_DIR = CMakeFiles\labvadim.dir
+  OBJECT_FILE_DIR = CMakeFiles\labvadim.dir
+
+build CMakeFiles/labvadim.dir/Appointmentholder.cpp.obj: CXX_COMPILER__labvadim_unscanned_Debug C$:/Users/Vadim/OneDrive/Рабочий$ стол/labvadim/Appointmentholder.cpp || cmake_object_order_depends_target_labvadim
+  DEP_FILE = CMakeFiles\labvadim.dir\Appointmentholder.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Vadim/OneDrive/Рабочий стол/labvadim/."
+  OBJECT_DIR = CMakeFiles\labvadim.dir
+  OBJECT_FILE_DIR = CMakeFiles\labvadim.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target labvadim
@@ -92,7 +106,7 @@ build CMakeFiles/labvadim.dir/Paymentinfo.cpp.obj: CXX_COMPILER__labvadim_unscan
 #############################################
 # Link the executable labvadim.exe
 
-build labvadim.exe: CXX_EXECUTABLE_LINKER__labvadim_Debug CMakeFiles/labvadim.dir/Appointment.cpp.obj CMakeFiles/labvadim.dir/Doctor.cpp.obj CMakeFiles/labvadim.dir/main.cpp.obj CMakeFiles/labvadim.dir/Patient.cpp.obj CMakeFiles/labvadim.dir/Paymentinfo.cpp.obj
+build labvadim.exe: CXX_EXECUTABLE_LINKER__labvadim_Debug CMakeFiles/labvadim.dir/Appointment.cpp.obj CMakeFiles/labvadim.dir/Doctor.cpp.obj CMakeFiles/labvadim.dir/main.cpp.obj CMakeFiles/labvadim.dir/Patient.cpp.obj CMakeFiles/labvadim.dir/Paymentinfo.cpp.obj CMakeFiles/labvadim.dir/Person.cpp.obj CMakeFiles/labvadim.dir/Appointmentholder.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\labvadim.dir

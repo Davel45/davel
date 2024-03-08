@@ -1,20 +1,22 @@
 #ifndef LABVADIM_DOCTOR_H
 #define LABVADIM_DOCTOR_H
 #include <iostream>
+#include "Person.h"
+#include "Appointmentholder.h"
 
 using namespace std;
-class Doctor{
+class Doctor : public Appointmentholder{
 private:    
-    string name;
+    //string name;
     string specialty;
-    int age;
+    //int age;
 public:
-    void set_name();
-    void get_name();
+    //void set_name();
+    //void get_name();
     void set_specialty();
     void get_specialty();
-    void set_age();
-    void get_age();
+    //void set_age();
+    //void get_age();
     void info();
 
     Doctor(string &&name="None",int age=0,string &&specialty="None");

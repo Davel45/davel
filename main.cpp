@@ -12,9 +12,6 @@ int main(){
  ++pat;
  pat.info();
 
- Patient patt ("Vladick",18,"0965224656");
- patt.info();
-
  Appointment appp("15:00","14 april");
  appp.info();
 

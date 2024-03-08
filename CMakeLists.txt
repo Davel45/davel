@@ -14,4 +14,8 @@ add_executable(labvadim
         Patient.cpp
         Patient.h
         Paymentinfo.cpp
-        Paymentinfo.h)
+        Paymentinfo.h
+        Person.cpp
+        Person.h
+        Appointmentholder.cpp
+        Appointmentholder.h)
