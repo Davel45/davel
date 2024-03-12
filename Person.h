@@ -13,7 +13,13 @@ protected:
     string name;
     int age;
 public:
-    Person(string &&Name="None",int Age=0);
+    void set_name();
+    void get_name();
+    void set_age();
+    void get_age();
+    virtual void info();
+    Person(string &&name="None",int age=0);
+    Person(const Person& other):name(other.name),age(other.age){}
     virtual ~Person();
 };
 
