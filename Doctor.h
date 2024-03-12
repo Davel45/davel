@@ -5,7 +5,7 @@
 #include "Appointmentholder.h"
 
 using namespace std;
-class Doctor : public Appointmentholder{
+class Doctor : public Person{
 private:    
     //string name;
     string specialty;
@@ -20,6 +20,7 @@ public:
     void info();
 
     Doctor(string &&name="None",int age=0,string &&specialty="None");
+    Doctor(const Doctor& other): Person(other),specialty(other.specialty){}
 
     ~Doctor();
 

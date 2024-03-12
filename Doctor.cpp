@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Doctor.h"
+Doctor::Doctor(std::string &&name, int age, std::string &&specialty): Person(std::move(name),age),specialty(std::move(specialty)){}
 /*void Doctor::set_name()
 {
     cout<<"Enter name doctor: ";
@@ -43,10 +44,10 @@ void Doctor::info()
 //{
     //cout<<"called constructor default"<<endl;
 //}
-Doctor::Doctor(std::string &&Name, int Age, std::string &&Specialty)
-        : Appointmentholder(std::move(Name), Age, ""), specialty(std::move(Specialty)) {
+/*Doctor::Doctor(std::string &&Name, int Age, std::string &&Specialty)
+        :Person(std::move(Name), Age, ""), specialty(std::move(Specialty)) {
     std::cout << "called Doctor constructor" << std::endl;
-}
+}*/
 Doctor::~Doctor()
 {
     cout<<"called Doctor destructor"<<endl;
