@@ -2,10 +2,9 @@
 #define LABVADIM_DOCTOR_H
 #include <iostream>
 #include "Person.h"
-#include "Appointmentholder.h"
 
 using namespace std;
-class Doctor : public Appointmentholder{
+class Doctor : public Person{
 private:    
     //string name;
     string specialty;
@@ -17,10 +16,11 @@ public:
     void get_specialty();
     //void set_age();
     //void get_age();
-    void info();
+    void info() override;
+    void displayInfo() override;
 
     Doctor(string &&name="None",int age=0,string &&specialty="None");
-
+    Doctor(const Doctor& other): Person(other),specialty(other.specialty){}
     ~Doctor();
 
     friend istream& operator>>(istream& input, Doctor& doctor);

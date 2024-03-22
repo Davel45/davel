@@ -1,7 +1,11 @@
 #include <iostream>
 #include "Patient.h"
 using namespace std;
-void Patient::set_name()
+int Patient::patientCounter=0;
+int Patient::getpatient() {
+    return patientCounter;
+}
+/*void Patient::set_name()
 {
     cout<<"enter name patient: ";
     string Name;
@@ -29,6 +33,9 @@ void Patient::set_phonenamber()
     string Phonenamber;
     cin>>Phonenamber;
     phonenamber=Phonenamber; 
+}*/
+void Patient::displayInfo() {
+    cout<<"This is a patient: "<<endl;
 }
 void Patient::get_phonenamber()
 {
@@ -44,15 +51,16 @@ Patient::Patient()
     age=0;
     phonenamber="None";
 }
-Patient::Patient(std::string Namepatient):Patient()
+Patient::Patient(std::string Namepatient):Person(std::move(Namepatient))
 {
-    name=Namepatient;
+    //name=Namepatient;
+    patientCounter++;
 }
-Patient::Patient(std::string Namepatient, int Age):Patient(Namepatient)
+Patient::Patient(std::string Namepatient, int Age):Person(std::move(Namepatient),Age)
 {
-    age=Age;
+    //age=Age;
 }
-Patient::Patient(std::string Namepatient, int Age, std::string Phonenamberpatient):Patient(Namepatient,Age)
+Patient::Patient(std::string Namepatient, int Age, std::string Phonenamberpatient):Person(std::move(Namepatient),Age)
 {
 phonenamber=Phonenamberpatient;
 }
