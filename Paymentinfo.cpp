@@ -36,7 +36,12 @@ void Payinfo::get_howmuchpay() {
 void Payinfo::info() {
     cout<<"Name patient how pay: "<<namepatienthowpay<<"\nTime pay: "<<timepay<<"\nHow much pay: "<<howmuchpay<<endl<<endl;
 }
-
+void Payinfo::print(std::ostream &os) const {
+    os<<"Info: "<<endl<<" Name: "<<namepatienthowpay<<"\nTime pay: "<<timepay<<"\nHow much pay: "<<howmuchpay<<endl;
+}
+void Payinfo::print_namehopay() const {
+    cout<<"Name how pay : "<<endl;
+}
 Payinfo::Payinfo(std::string &&Namepatienthowpay,std::string &&Timepay,float Howmuchpay):
     namepatienthowpay(Namepatienthowpay),timepay(Timepay),howmuchpay(Howmuchpay){
     cout<<""<<endl;
